@@ -98,10 +98,10 @@ class Testing : public voi::VoiOGLEngine {
 			prevTimeInterval += delta;
 		}
 
-		//ChangeTexture(textureIndices[0], img1.width, img1.height, img1.data);
-		//ChangeTexture(textureIndices[1], img0.width, img0.height, img0.data);
+		// ChangeTexture(textureIndices[0], img1.width, img1.height, img1.data);
+		// ChangeTexture(textureIndices[1], img0.width, img0.height, img0.data);
 
-		//std::swap(img0, img1);
+		// std::swap(img0, img1);
 		drawColor = { 0 };
 
 
@@ -127,8 +127,6 @@ class Testing : public voi::VoiOGLEngine {
 };
 
 int main() {
-
-	std::cout << "FillVertex2D: " << sizeof(voi::FillVertex2D) << "; Vec2f: " << sizeof(voi::Vec2f) << "; Pixel: " << sizeof(voi::Pixel) << ";\n";
 
 	Testing test;
 	if (test.Construct("VoiOGLEngine", 800, 600)) test.Start();
